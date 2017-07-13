@@ -118,7 +118,7 @@ class JbossLexer(object):
     t_NULL = r'\x6e\x75\x6c\x6c'  # 'null'
     t_UNDEFINED = r'undefined'  # 'null'
     t_DECIMAL_POINT = r'\x2E'  # '.'
-    t_DIGITS = r'[\x30-\x39]+'  # '0'..'9'
+    t_DIGITS = r'[\x31-\x39][\x30-\x39]*'  # ['1'-'9']['0'-'9']*
     t_E = r'[\x45\x65]'  # 'e' or 'E'
     t_MINUS = r'\x2D'  # '-'
     t_PLUS = r'\x2B'  # '+'
